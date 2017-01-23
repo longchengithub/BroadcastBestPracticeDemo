@@ -1,7 +1,6 @@
 package com.example.chenlong.broadcastbestpractice.util;
 
 import android.app.Activity;
-import android.os.Process;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +42,5 @@ public class ActivityCollector {
                 activity.finish();
             }
         }
-
-        //杀掉当前的进程
-        Process.killProcess(Process.myPid());
     }
 }

@@ -67,6 +67,8 @@ public class BaseActivity extends AppCompatActivity {
 
             dialog.setPositiveButton("确定", (dialog1, which) -> {
                 ActivityCollector.finishAll();
+                Intent intent1=new Intent(context,LoginActivity.class);
+                startActivity(intent1);
             });
 
             dialog.show();
